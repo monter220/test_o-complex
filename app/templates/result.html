@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+    <style>
+   table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-collapse: collapse;
+text-align: center;
+}
+th, td:first-child {
+background: #AFCDE7;
+color: white;
+padding: 10px 20px;
+}
+th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+td {
+background: #D8E6F3;
+}
+th:first-child, td:first-child {
+text-align: left;
+}
+  </style>
+</head>
+<body>
+<div>
+      <a href="/" class="btn btn-custom-black">Вернуться назад</a>
+        {% if Address %}
+          <h2>{{ Address }}</h2>
+
+        <table style="width:100%">
+          <tbody>
+          <tr>
+            <td>Время</td>
+            <td>Температура</td>
+          </tr>
+          <tr>
+            <td>{{ Time[0] }}</td>
+            <td>{{ Temperature[0] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[1] }}</td>
+            <td>{{ Temperature[1] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[2] }}</td>
+            <td>{{ Temperature[2] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[3] }}</td>
+            <td>{{ Temperature[3] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[4] }}</td>
+            <td>{{ Temperature[4] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[5] }}</td>
+            <td>{{ Temperature[5] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[6] }}</td>
+            <td>{{ Temperature[6] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[7] }}</td>
+            <td>{{ Temperature[7] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[8] }}</td>
+            <td>{{ Temperature[8] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[9] }}</td>
+            <td>{{ Temperature[9] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[10] }}</td>
+            <td>{{ Temperature[10] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[11] }}</td>
+            <td>{{ Temperature[11] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[12] }}</td>
+            <td>{{ Temperature[12] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[13] }}</td>
+            <td>{{ Temperature[13] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[14] }}</td>
+            <td>{{ Temperature[14] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[15] }}</td>
+            <td>{{ Temperature[15] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[16] }}</td>
+            <td>{{ Temperature[16] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[17] }}</td>
+            <td>{{ Temperature[17] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[18] }}</td>
+            <td>{{ Temperature[18] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[19] }}</td>
+            <td>{{ Temperature[19] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[20] }}</td>
+            <td>{{ Temperature[20] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[21] }}</td>
+            <td>{{ Temperature[21] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[22] }}</td>
+            <td>{{ Temperature[22] }}</td>
+          </tr>
+          <tr>
+            <td>{{ Time[23] }}</td>
+            <td>{{ Temperature[23] }}</td>
+          </tr>
+          </tbody>
+        </table>
+  {% else %}
+          <h2>Город не найден</h2>
+        {% endif %}
+</div>
+</body>
+</html>
